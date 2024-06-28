@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mani Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./Style/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">Mani</div>
+        <ul class="nav-menu">
+          <a href="#Home" class="nav-links">
+            <li class="nav-item">Home</li>
+          </a>
+          <a href="#About" class="nav-links">
+            <li class="nav-item">About</li>
+          </a>
+          <a href="#Projects" class="nav-links">
+            <li class="nav-item">Projects</li>
+          </a>
+          <a href="#Skills" class="nav-links">
+            <li class="nav-item">Skills</li>
+          </a>
+          <a href="#Contact" class="nav-links">
+            <li class="nav-item">Contact</li>
+          </a>
+        </ul>
+        <div class="nav-icon">
+          <!-- {click ? (
+          <span class="icon">
+            <IoMdCloseCircle />
+          </span>
+          ) : (
+          <span class="icon">
+            <TiThMenuOutline />
+          </span>
+          )} -->
+          <i class="fa fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <section id="Home">
+      <div class="Home">
+        <div class="HomeDesc">
+          <h1>
+            Hi! <br />
+            I am <span style="color: blue">MANI</span> <br />
+            B.E Graduate
+          </h1>
+        </div>
+        <div class="HomeImg">
+          <img src="./Assets/Photo.jpeg" alt="Mani Profile" class="Profile" />
+        </div>
+      </div>
+    </section>
+    <section id="About">
+      <h1 class="Heading">About Me</h1>
+      <div class="About">
+        <p class="AboutPara">
+          Hello, I'm Mani S, an enthusiastic Electronics and Communication
+          Engineering graduate from Muthayammal Engineering College. I am
+          passionate about leveraging my technical skills and continuous
+          learning mindset to develop innovative solutions. I have proficiency
+          in programming languages like C and Java, along with experience in
+          tools such as EAGLE and Blender. You can reach me via the links at
+          Contact section.
+        </p>
+      </div>
+    </section>
+
+    <section id="Projects">
+      <h1 class="Heading">Projects</h1>
+      <div class="Projects">
+        <div class="ProjectCard">
+          <img src="./Assets/Project1.jpg" alt="" />
+          <h2>Automatic Ration Dispenser</h2>
+          <h3>Description</h3>
+          <p>
+            A ration dispensing system using RFID tags improves efficiency and
+            speed, reducing waiting times in queues by ensuring quicker and more
+            accurate distribution of products.
+          </p>
+          <h3>Components Used</h3>
+          <p class="Components">
+            Arduino UNO, ESP8266, RFID Reader, RFID Tags, 4X4 Matrix Keypad,
+            16X2 LCD Display, I2C Module, Servo Motor, Speakers, Amplifier,
+            Power Supply Module, 12V Power Adaptor
+          </p>
+        </div>
+
+        <div class="ProjectCard">
+          <img src="./Assets/Project2.jpg" alt="" />
+          <h2>IoT Powered Personal Assistant</h2>
+          <h3>Description</h3>
+          <p>
+            The Intelligent IoT-Powered Personal Assistant revolutionizes user
+            interaction, enhancing convenience and efficiency with speech
+            recognition, personalizing experience, and seamlessly connecting IoT
+            devices for future innovation.
+          </p>
+          <h3>Components Used</h3>
+          <p class="Components">
+            Raspberry Pi, Arduino Mega, Relay, ESP32-CAM, Power Supply Module,
+            12V Power Adaptor, L298D Moto Driver, Servo motors, Stepper Motors,
+            DC Motors
+          </p>
+        </div>
+
+        <div class="ProjectCard">
+          <img src="./Assets/Project3.jpg" alt="" />
+          <h2>Autonomous Surveillance Rover</h2>
+          <h3>Description</h3>
+          <p>
+            This Surveillance Rover autonomously navigates using LIDAR,
+            collecting data via sensors, communicating wirelessly for real-time
+            monitoring, enhancing border security effectively
+          </p>
+          <h3>Components Used</h3>
+          <p class="Components">
+            ESP8266, ESP32-CAM, Servo Motors, DC Motors, Ultrasonic Sensor,
+            Power Supply Module, 12V Power Adaptor, L298D Motor Driver, IR
+            Sensors
+          </p>
+        </div>
+
+        <div class="ProjectCard">
+          <img src="./Assets/Project4.jpg" alt="" />
+          <h2>Solar Energy Monitoring system</h2>
+          <h3>Description</h3>
+          <p>
+            Energy-saving project using ESP8266: Monitor battery status via
+            Telegram, switch appliances to battery power when charged, reducing
+            electricity bills with relay-controlled EB line.
+          </p>
+          <h3>Components Used</h3>
+          <p class="Components">
+            ESP8266, Solar Panel, Relay, Batteries, Battery Charging Module, DC
+            Motors, LEDs
+          </p>
+        </div>
+
+        <div class="ProjectCard">
+          <img src="./Assets/Project5.jpg" alt="" />
+          <h2>Real Time Temperature Monitoring System</h2>
+          <h3>Description</h3>
+          <p>
+            This project monitors temperature via IoT, automatically controls a
+            fan based on temperature thresholds, also allows manual fan control,
+            and provides temperature updates via Telegram messages.
+          </p>
+          <h3>Components Used</h3>
+          <p class="Components">
+            ESP8266, DHT11 Tempertaure Sensor, DC Motor, RGB LED, Buzzer,
+            Breadboard, 16X2 LCD Display, I2C Module
+          </p>
+        </div>
+
+        <div class="ProjectCard">
+          <img src="./Assets/Project6.jpg" alt="" />
+          <h2>Automatic Toll Collection System</h2>
+          <h3>Description</h3>
+          <p>
+            This project introduces an RFID-based toll collection system,
+            charging users based on the actual distance traveled on National
+            Highways. It aims to enhance efficiency, reduce congestion, and
+            ensure a fair and user-centric tolling experience.
+          </p>
+          <h3>Components Used</h3>
+          <p class="Components">
+            Arduino UNO, ESP8266, 16X2 LCD Display, I2C Module, RFID Reader,
+            RFID Tags, Relay, DC Motors, L209D Motor Driver
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="Skills">
+      <h1 class="Heading">Skills</h1>
+      <div class="Skills">
+        <div class="SkillCard">
+          <img src="./Assets/Arduino.png" alt="" />
+          <h3>Arduino Programming</h3>
+        </div>
+
+        <div class="SkillCard">
+          <img src="./Assets/Java.png" alt="" />
+          <h3>Java Programming</h3>
+        </div>
+
+        <div class="SkillCard">
+          <img src="./Assets/C.png" alt="" />
+          <h3>C Programming</h3>
+        </div>
+
+        <div class="SkillCard">
+          <img src="./Assets/Blender.png" alt="" />
+          <h3>3D Designing</h3>
+        </div>
+
+        <div class="SkillCard">
+          <img src="./Assets/Eagle.png" alt="" />
+          <h3>PCB Designing</h3>
+        </div>
+
+        <div class="SkillCard">
+          <img src="./Assets/React.png" alt="" />
+          <h3>React</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="Contact">
+      <h1 class="Heading">Contact Me</h1>
+      <div class="Contact">
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/mani2632"
+              target="_blank"
+              class="linkedin"
+            >
+              <i class="fa fa-linkedin"></i> &nbsp;Linkedin</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/Mani-26" target="_blank" class="github">
+              <i class="fa fa-github"></i> &nbsp; Github</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/daredevil_mani/"
+              target="_blank"
+              class="instagram"
+            >
+              <i class="fa fa-instagram"></i> &nbsp; Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://wa.me/+919943263604"
+              target="_blank"
+              class="whatsapp"
+            >
+              <i class="fa fa-whatsapp"></i> &nbsp; Whatsapp</a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:maniinnovator26@gmail.com"
+              target="_blank"
+              class="envelope"
+            >
+              <i class="fa fa-envelope"></i> &nbsp; GMail</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="Footer">
+      <p>&copy; 2024 All rights reserved.</p>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+    const navIcon = document.querySelector('.nav-icon i');
+    const navMenu = document.querySelector('.nav-menu');
+
+    navIcon.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        if (navIcon.classList.contains('fa-bars')) {
+            navIcon.classList.remove('fa-bars');
+            navIcon.classList.add('fa-times');
+        } else {
+            navIcon.classList.remove('fa-times');
+            navIcon.classList.add('fa-bars');
+        }
+    });
+});
+    </script>
+  </body>
+</html>
