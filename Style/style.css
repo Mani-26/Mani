@@ -32,6 +32,8 @@ a {
 .progress-bar {
   height: 4px;
   background: blue;
+  border-radius: 30px;
+  margin-left: -10px;
   width: 0%;
 }
 
