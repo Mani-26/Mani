@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mani Portfolio</title>
+    <link rel="icon" href="./Assets/Photo.jpeg" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -11,6 +12,9 @@
     <link rel="stylesheet" href="./Style/style.css" />
   </head>
   <body>
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
     <nav class="navbar">
       <div class="nav-container">
         <div class="nav-logo">Mani</div>
@@ -269,21 +273,35 @@
       <p>&copy; 2024 All rights reserved.</p>
     </div>
     <script>
-      document.addEventListener('DOMContentLoaded', () => {
-    const navIcon = document.querySelector('.nav-icon i');
-    const navMenu = document.querySelector('.nav-menu');
+      window.onscroll = function () {
+        myFunction();
+      };
 
-    navIcon.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        if (navIcon.classList.contains('fa-bars')) {
-            navIcon.classList.remove('fa-bars');
-            navIcon.classList.add('fa-times');
-        } else {
-            navIcon.classList.remove('fa-times');
-            navIcon.classList.add('fa-bars');
-        }
-    });
-});
+      function myFunction() {
+        var winScroll =
+          document.body.scrollTop || document.documentElement.scrollTop;
+        var height =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const navIcon = document.querySelector(".nav-icon i");
+        const navMenu = document.querySelector(".nav-menu");
+
+        navIcon.addEventListener("click", () => {
+          navMenu.classList.toggle("active");
+          if (navIcon.classList.contains("fa-bars")) {
+            navIcon.classList.remove("fa-bars");
+            navIcon.classList.add("fa-times");
+          } else {
+            navIcon.classList.remove("fa-times");
+            navIcon.classList.add("fa-bars");
+          }
+        });
+      });
     </script>
   </body>
 </html>

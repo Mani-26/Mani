@@ -19,6 +19,21 @@ body {
 a {
   text-decoration: none;
 }
+
+.progress-container {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 4px;
+  background: transparent;
+}
+
+.progress-bar {
+  height: 4px;
+  background: blue;
+  width: 0%;
+}
 /*******************************************************
 *                   For Navigation Bar                 *
 *******************************************************/
