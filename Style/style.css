@@ -213,8 +213,12 @@ a {
 .Profile {
   width: 70%;
   margin: 10% 15%;
-  border-radius: 40% 10%;
+  border-radius: 35% 10%;
+  transform: scale(0.98);
   border: 3px solid greenyellow;
+}
+.Profile:hover {
+  transform: scale(1);
 }
 
 /*******************************************************
@@ -366,7 +370,7 @@ a {
   max-height: 350px;
   overflow: auto;
   padding: 15px 10px;
-  border-radius: 20px 20PX;
+  border-radius: 20px 20px;
   margin: 40px;
   height: fit-content;
   display: flex;
@@ -391,7 +395,59 @@ a {
   width: 250px;
 }
 
-.AccomplishmentCard span{
+.AccomplishmentCard span {
+  margin: 5px 2%;
+}
+
+/*******************************************************
+*                   For Achievement                    *
+*******************************************************/
+
+.Achievement {
+  /* border: 3px solid blue; */
+  /* background-color: #e6fff9; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 0px;
+  flex-wrap: wrap;
+}
+
+.Achievement .AchievementCard {
+  /* max-width: 30%; */
+  min-width: 300px;
+  max-width: 300px;
+  max-height: 350px;
+  overflow: auto;
+  padding: 20px 10px;
+  border-radius: 20px 20px;
+  margin: 20px;
+  height: fit-content;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.AchievementCard:nth-child(odd) {
+  border: 3px solid forestgreen;
+  background: #adf7b6;
+}
+
+.AchievementCard:nth-child(even) {
+  border: 3px solid burlywood;
+  background: #fcf5c7;
+}
+
+.AchievementCard img {
+  border-radius: 5%;
+  height: 150px;
+  width: 250px;
+  min-height: 150px;
+  min-width: 250px;
+}
+
+.AchievementCard span {
   margin: 5px 2%;
 }
 
