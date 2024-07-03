@@ -314,13 +314,13 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 0px;
   flex-wrap: wrap;
 }
 
 .Skills .SkillCard {
-  min-width: 250px;
-  padding: 20px 0px;
+  min-width: 200px;
+  padding: 15px 5px;
   border-radius: 50px 10px;
   margin: 40px;
   height: fit-content;
@@ -343,6 +343,56 @@ a {
   border-radius: 50%;
   height: 100px;
   width: 100px;
+}
+
+/*******************************************************
+*                 For Accomplishment                   *
+*******************************************************/
+
+.Accomplishment {
+  /* border: 3px solid blue; */
+  /* background-color: #e6fff9; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 0px;
+  flex-wrap: wrap;
+}
+
+.Accomplishment .AccomplishmentCard {
+  /* max-width: 30%; */
+  min-width: 300px;
+  max-width: 300px;
+  max-height: 350px;
+  overflow: auto;
+  padding: 15px 10px;
+  border-radius: 20px 20PX;
+  margin: 40px;
+  height: fit-content;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.AccomplishmentCard:nth-child(odd) {
+  border: 3px solid forestgreen;
+  background: #adf7b6;
+}
+
+.AccomplishmentCard:nth-child(even) {
+  border: 3px solid burlywood;
+  background: #fcf5c7;
+}
+
+.AccomplishmentCard img {
+  border-radius: 5%;
+  height: 200px;
+  width: 250px;
+}
+
+.AccomplishmentCard span{
+  margin: 5px 2%;
 }
 
 /*******************************************************
@@ -453,7 +503,7 @@ a {
 
 .Footer {
   text-align: center;
-  padding: 2px;
+  padding: 1px;
   background-color: gray;
 }
 
